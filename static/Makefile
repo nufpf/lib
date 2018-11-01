@@ -11,7 +11,10 @@ my_math.o: my_math.c
 my_print.o: my_print.c
 	gcc -c my_print.c
 
-test: a.out
+test: run
 
-a.out: test.c
-	gcc test.c -L. -lmylib
+run: build test.c
+	gcc -o run test.c -L. -lmylib
+
+clean:
+	rm *.o run *.a
