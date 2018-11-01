@@ -17,6 +17,6 @@
  */
 #include <stdio.h>
 
-void count(const char * message) {
+void cout(const char * message) {
     fprintf(stdout, "%s\n", message);
 }
