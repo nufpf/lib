@@ -17,4 +17,4 @@ run: build test.c
 	gcc -o run test.c -L. -lmylib
 
 clean:
-	rm *.o run *.a
+	rm -f *.o run *.a a.out
